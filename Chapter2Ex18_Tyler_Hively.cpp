@@ -26,15 +26,16 @@ int main()
     int Customersurveyed;
     int Energydrinkers;
     int Citrusenjoyers;
-    Customersurveyed = 16500;
+    
+    cout << "----Soft Drink Company Survey Results Calculator----" << endl;
+    cout << "Please enter how many customers were surveyed." << endl;
+    cin  >> Customersurveyed;
     Energydrinkers = Customersurveyed * .15;
     Citrusenjoyers = Energydrinkers * .58;
-    
-    cout << "----Soft Drink Company Survey Results----" << endl;
-    cout << "Out of 16,500 customers surveyed..." << endl;
+    cout << "Out of " << Customersurveyed << " customers surveyed..." << endl;
     cout << "Approximately " << Energydrinkers << " customers purchase one or more energy drinks per week." << endl;
     cout << "Of those that purchase energy drinks..." << endl;
-    cout << "Approximatley " << Citrusenjoyers << " customers prefer citrus - flavored energy drinks." << endl;
+    cout << "Approximatley " << Citrusenjoyers << " customers prefer citrus-flavored energy drinks." << endl;
 
 
 }
